@@ -44,16 +44,13 @@ int main() {
 
     int start;
     file >> start;
-
     file.close();
 
     vector<int> distances;
-
     bfs(graph, start, distances);
 
     for (int i = 0; i < n; ++i) {
         cout << distances[i] << endl;
     }
-
     return 0;
 }
